@@ -1,6 +1,6 @@
 import SideNav from '@/app/ui/dashboard/sidenav';
 
-export const experimental_prr = true;
+export const experimental_prr = process.env.NEXT_PUBLIC_ENABLE_PPR === 'true';
  
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
